@@ -1,4 +1,5 @@
 /* Reset بسيط */
+
 * {
   margin: 0;
   padding: 0;
@@ -169,7 +170,7 @@ main {
 /* الوصف */
 .hero-content h2 {
   font-size: 22px;
-  color: #12055b;
+  color: oklab(62.793% 0.22489 0.1258 / 0.774);
   margin-bottom: 30px;
   opacity: 0;
   transform: translateY(40px);
@@ -476,14 +477,16 @@ main {
       animation: fadeUp 1s ease forwards;
       animation-delay: .9s;
     }
-.corner-footer {
-  position: fixed;
-  bottom: 5px;    /* مسافة من تحت */
-  right: 10px;     /* مسافة من اليمين */
-  color: #171111;
-  font-size: 9px;
-  z-index: 1000;
-}
+    
+    .corner-footer {
+      position: fixed;
+      bottom: 20px;             /* مسافة من تحت */
+      left: 50%;               /* يبدأ من منتصف العرض */
+      transform: translateX(-50%); /* يضبطه للمنتصف بالضبط */
+      color: #171111;
+      font-size: 9px;
+      z-index: 1000;
+    }
 
 
 /* أيقونة المينيو */
