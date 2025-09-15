@@ -6,33 +6,15 @@
   <title>الأخلاص</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* علشان الفوتر يفضل تحت */
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    main {
-      flex: 1; /* يخلي المحتوى ياخد المساحة المتبقية */
-    }
-
-    .corner-footer {
-      text-align: center;      /* يخلي النص في النص */
-      padding: 15px;
-      background-color: #222;  /* لون خلفية */
-      color: #fff;             /* لون النص */
-      font-family: Arial, sans-serif;
-    }
+ 
   </style>
 </head>
-<body> 
+<body>
   <header>
     <img src="logo.png" alt="شعار">
     
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    <nav id="navbar">
+    <nav  id="navbar">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="about us .html">About Us</a>
@@ -58,15 +40,15 @@
   </main>
 
   <footer class="corner-footer">
-    <p>By Eng-Eslam Alaa</p>
-  </footer>
+  <p>By Eng-Eslam Alaa</p>
+</footer>
 
-  <script>
-    function toggleMenu() {
-      document.getElementById("navbar").classList.toggle("active");
-    }
-  </script>
+<script>
+  function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("active");
+  }
+</script>
+
 
 </body>
 </html>
-
